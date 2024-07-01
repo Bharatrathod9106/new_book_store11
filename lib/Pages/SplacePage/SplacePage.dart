@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Controller/SpalceController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -9,7 +11,7 @@ class SplacePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SplaceController splaceController = Get.put(SplaceController());
+    Get.put(SplaceController());
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.primary,
       body: Center(

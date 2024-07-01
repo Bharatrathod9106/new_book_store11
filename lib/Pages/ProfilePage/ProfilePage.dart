@@ -1,14 +1,14 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Components/BookTile.dart';
 import 'package:bookstore/Components/MyBackButton.dart';
 import 'package:bookstore/Components/myAlertBox.dart';
 import 'package:bookstore/Controller/BookController.dart';
-import 'package:bookstore/Model/Data.dart';
 import 'package:bookstore/Pages/AddNewBook/AddNewBook.dart';
 import 'package:bookstore/Pages/BookDetails/BookDetails.dart';
 import 'package:bookstore/Pages/ProfilePage/EditProfile.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../Auth/LoginScreen.dart';
@@ -28,7 +28,7 @@ class ProfilePage extends StatelessWidget {
         },
         child: Icon(
           Icons.add,
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
         ),
       ),
       body: RefreshIndicator(onRefresh: ()async{
@@ -62,7 +62,7 @@ class ProfilePage extends StatelessWidget {
                                     ?.copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .onBackground,
+                                          .onSurface,
                                     ),
                               ),
                               // SizedBox(width: 10),
@@ -89,7 +89,7 @@ class ProfilePage extends StatelessWidget {
                                     Icons.logout_outlined,
                                     color: Theme.of(context)
                                         .colorScheme
-                                        .onBackground,
+                                        .onSurface,
                                   ))
                             ],
                           ),
@@ -102,7 +102,7 @@ class ProfilePage extends StatelessWidget {
                                     width: 2,
                                     color: Theme.of(context)
                                         .colorScheme
-                                        .onBackground)),
+                                        .onSurface)),
                             child: Obx(() {
                               if (bb.userDataList.isEmpty) {
                                 return SizedBox();
@@ -146,7 +146,7 @@ class ProfilePage extends StatelessWidget {
                                           ?.copyWith(
                                               color: Theme.of(context)
                                                   .colorScheme
-                                                  .onBackground),
+                                                  .onSurface),
                                     ),
                                     SizedBox(
                                       width: 10,

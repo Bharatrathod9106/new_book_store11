@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Components/BookCard.dart';
 import 'package:bookstore/Components/BookTile.dart';
 import 'package:bookstore/Controller/BookController.dart';
@@ -54,7 +56,7 @@ class HomePage extends StatelessWidget {
                                     ?.copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .onBackground,
+                                          .onSurface,
                                     ),
                               ),
                               Text(
@@ -65,7 +67,7 @@ class HomePage extends StatelessWidget {
                                     ?.copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .onBackground,
+                                          .onSurface,
                                     ),
                               ),
                             ],
@@ -82,7 +84,7 @@ class HomePage extends StatelessWidget {
                                       ?.copyWith(
                                         color: Theme.of(context)
                                             .colorScheme
-                                            .onBackground,
+                                            .onSurface,
                                       ),
                                 ),
                               ),
@@ -106,7 +108,7 @@ class HomePage extends StatelessWidget {
                                     ?.copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .onBackground,
+                                          .onSurface,
                                     ),
                               )
                             ],

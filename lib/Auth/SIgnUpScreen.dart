@@ -1,7 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import 'dart:io';
 
 import 'package:bookstore/Auth/LoginScreen.dart';
-import 'package:bookstore/Config/colors.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

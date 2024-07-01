@@ -67,7 +67,7 @@ class CustomAlert extends StatelessWidget {
                 ElevatedButton(
                   onPressed: onConfirm ?? () {},
                   style: const ButtonStyle(
-                      backgroundColor: MaterialStatePropertyAll(Colors.red)),
+                      backgroundColor: WidgetStatePropertyAll(Colors.red)),
                   child: Text(
                     positiveText,
                     style: const TextStyle(color: Colors.white),

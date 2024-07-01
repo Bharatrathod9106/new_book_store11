@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Config/colors.dart';
 import 'package:bookstore/Controller/BookController.dart';
 import 'package:bookstore/Pages/ProfilePage/ProfilePage.dart';
@@ -19,7 +21,7 @@ class HomeAppBar extends StatelessWidget {
         Text(
           "Novel Nest",
           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
         ),
         InkWell(
@@ -27,7 +29,7 @@ class HomeAppBar extends StatelessWidget {
             Get.to(() => ProfilePage());
           },
           child: CircleAvatar(
-            backgroundColor: Theme.of(context).colorScheme.onBackground,
+            backgroundColor: Theme.of(context).colorScheme.onSurface,
             child: Obx(() => bb.userDataList.isEmpty
                 ? Text('')
                 : Text(

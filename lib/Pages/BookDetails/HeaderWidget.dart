@@ -1,11 +1,11 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Components/MyBackButton.dart';
 import 'package:bookstore/Controller/BookController.dart';
 import 'package:bookstore/Controller/chatController.dart';
 import 'package:bookstore/Pages/Chat_dir/Chat_Message.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -107,13 +107,13 @@ class HeaderWidget extends StatelessWidget {
           maxLines: 1,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
         ),
         Text(
           "Author : $author",
           style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
         ),
         SizedBox(height: 10),
@@ -122,7 +122,7 @@ class HeaderWidget extends StatelessWidget {
           maxLines: 2,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
         ),
         SizedBox(height: 20),
@@ -134,13 +134,13 @@ class HeaderWidget extends StatelessWidget {
                 Text(
                   "Rating",
                   style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 ),
                 Text(
                   rating,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 )
               ],
@@ -150,13 +150,13 @@ class HeaderWidget extends StatelessWidget {
                 Text(
                   "Pages",
                   style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 ),
                 Text(
                   pages,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 )
               ],
@@ -166,13 +166,13 @@ class HeaderWidget extends StatelessWidget {
                 Text(
                   "Language",
                   style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 ),
                 Text(
                   language,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 )
               ],
@@ -182,13 +182,13 @@ class HeaderWidget extends StatelessWidget {
                 Text(
                   "Audio",
                   style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 ),
                 Text(
                   audiolen,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onBackground,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                 )
               ],

@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:bookstore/Pages/Homepage/HomePage.dart';
 import 'package:bookstore/Pages/welcomePage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -8,7 +7,6 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 import 'package:image_picker/image_picker.dart';
 import '../Auth/LoginScreen.dart';
 import '../Auth/utils.dart';

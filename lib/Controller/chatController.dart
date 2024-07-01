@@ -96,7 +96,7 @@ class ChatController extends GetxController {
         .listen((snapshot) {
       var ChatList = snapshot.docs
           .map((e) => ChatModel.fromJson(
-                e.data() as Map<String, dynamic>,
+                e.data(),
               ))
           .toList();
       chatList.assignAll(ChatList);

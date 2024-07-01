@@ -14,7 +14,7 @@ class BookPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: BackButton(
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
 
         ),
         backgroundColor: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class BookPage extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .headlineMedium
-              ?.copyWith(color: Theme.of(context).colorScheme.onBackground),
+              ?.copyWith(color: Theme.of(context).colorScheme.onSurface),
         ),
         centerTitle: true,
       ),
@@ -33,7 +33,7 @@ class BookPage extends StatelessWidget {
         },
         child: Icon(
           Icons.bookmark,
-          color: Theme.of(context).colorScheme.background,
+          color: Theme.of(context).colorScheme.surface,
         ),
       ),
       body: SfPdfViewer.network(

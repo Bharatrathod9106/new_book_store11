@@ -16,7 +16,7 @@ class CategoryWidget extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: Theme.of(context).colorScheme.background,
+            color: Theme.of(context).colorScheme.surface,
           ),
           child: Row(
             children: [

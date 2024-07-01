@@ -12,7 +12,7 @@ class MyInputTextField extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Theme.of(context).colorScheme.background,
+        color: Theme.of(context).colorScheme.surface,
       ),
       child: Row(
         children: [

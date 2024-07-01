@@ -10,7 +10,7 @@ class AddNewBook extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController controller = TextEditingController();
+    // TextEditingController controller = TextEditingController();
     BookController bookController = Get.put(BookController());
     return Scaffold(
       body: SingleChildScrollView(
@@ -41,7 +41,7 @@ class AddNewBook extends StatelessWidget {
                                   ?.copyWith(
                                     color: Theme.of(context)
                                         .colorScheme
-                                        .onBackground,
+                                        .onSurface,
                                   ),
                             ),
                             SizedBox(width: 70),
@@ -60,7 +60,7 @@ class AddNewBook extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                                 color: Theme.of(context)
                                     .colorScheme
-                                    .onBackground
+                                    .onSurface
                                     .withOpacity(0.3),
                               ),
                               child: Center(
@@ -68,7 +68,7 @@ class AddNewBook extends StatelessWidget {
                                     ? CircularProgressIndicator(
                                         color: Theme.of(context)
                                             .colorScheme
-                                            .onBackground,
+                                            .onSurface,
                                       )
                                     : bookController.imageUrl.value == ""
                                         ? Icon(Icons.add, size: 30)
@@ -103,8 +103,8 @@ class AddNewBook extends StatelessWidget {
                             padding: EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               color: bookController.pdfUrl.value == ""
-                                  ? Theme.of(context).colorScheme.onBackground
-                                  : Theme.of(context).colorScheme.background,
+                                  ? Theme.of(context).colorScheme.onSurface
+                                  : Theme.of(context).colorScheme.surface,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: bookController.isPdfUploading.value
@@ -112,7 +112,7 @@ class AddNewBook extends StatelessWidget {
                                     child: CircularProgressIndicator(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .background,
+                                          .surface,
                                     ),
                                   )
                                 : bookController.pdfUrl.value == ""
@@ -128,7 +128,7 @@ class AddNewBook extends StatelessWidget {
                                               Icons.insert_chart,
                                               color: Theme.of(context)
                                                   .colorScheme
-                                                  .background,
+                                                  .surface,
                                             ),
                                             SizedBox(width: 10),
                                             Text(
@@ -139,7 +139,7 @@ class AddNewBook extends StatelessWidget {
                                                   ?.copyWith(
                                                     color: Theme.of(context)
                                                         .colorScheme
-                                                        .background,
+                                                        .surface,
                                                   ),
                                             )
                                           ],
@@ -157,7 +157,7 @@ class AddNewBook extends StatelessWidget {
                                               Icons.upload,
                                               color: Theme.of(context)
                                                   .colorScheme
-                                                  .onBackground,
+                                                  .onSurface,
                                             ),
                                             SizedBox(width: 10),
                                             Text(
@@ -168,7 +168,7 @@ class AddNewBook extends StatelessWidget {
                                                   ?.copyWith(
                                                     color: Theme.of(context)
                                                         .colorScheme
-                                                        .onBackground,
+                                                        .onSurface,
                                                   ),
                                             )
                                           ],
@@ -182,7 +182,7 @@ class AddNewBook extends StatelessWidget {
                         child: Container(
                           padding: EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.onBackground,
+                            color: Theme.of(context).colorScheme.onSurface,
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Row(
@@ -190,7 +190,7 @@ class AddNewBook extends StatelessWidget {
                             children: [
                               Icon(
                                 Icons.audio_file,
-                                color: Theme.of(context).colorScheme.background,
+                                color: Theme.of(context).colorScheme.surface,
                               ),
                               SizedBox(width: 10),
                               Text(
@@ -201,7 +201,7 @@ class AddNewBook extends StatelessWidget {
                                     ?.copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .background,
+                                          .surface,
                                     ),
                               )
                             ],
@@ -287,7 +287,7 @@ class AddNewBook extends StatelessWidget {
                               border: Border.all(
                                 width: 1,
                                 color:
-                                    Theme.of(context).colorScheme.onBackground,
+                                    Theme.of(context).colorScheme.onSurface,
                               )),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -295,7 +295,7 @@ class AddNewBook extends StatelessWidget {
                               Icon(
                                 Icons.cancel,
                                 color:
-                                    Theme.of(context).colorScheme.onBackground,
+                                    Theme.of(context).colorScheme.onSurface,
                               ),
                               SizedBox(width: 10),
                               GestureDetector(onTap: (){
@@ -309,7 +309,7 @@ class AddNewBook extends StatelessWidget {
                                       ?.copyWith(
                                         color: Theme.of(context)
                                             .colorScheme
-                                            .onBackground,
+                                            .onSurface,
                                       ),
                                 ),
                               )
@@ -333,7 +333,7 @@ class AddNewBook extends StatelessWidget {
                                     child: CircularProgressIndicator(
                                       color: Theme.of(context)
                                           .colorScheme
-                                          .onBackground,
+                                          .onSurface,
                                     ),
                                   )
                                 : InkWell(
@@ -348,7 +348,7 @@ class AddNewBook extends StatelessWidget {
                                           Icons.post_add,
                                           color: Theme.of(context)
                                               .colorScheme
-                                              .onBackground,
+                                              .onSurface,
                                         ),
                                         SizedBox(width: 10),
                                         Text(
@@ -359,7 +359,7 @@ class AddNewBook extends StatelessWidget {
                                               ?.copyWith(
                                                 color: Theme.of(context)
                                                     .colorScheme
-                                                    .onBackground,
+                                                    .onSurface,
                                               ),
                                         )
                                       ],

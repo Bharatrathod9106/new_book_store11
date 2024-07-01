@@ -29,7 +29,7 @@ class MyTextFormField extends StatelessWidget {
         filled: true,
         hintText: hintText,
         prefixIcon:
-            Icon(icon, color: Theme.of(context).colorScheme.onBackground),
+            Icon(icon, color: Theme.of(context).colorScheme.onSurface),
       ),
     );
   }

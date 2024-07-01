@@ -7,9 +7,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
-import 'package:get/get_rx/src/rx_types/rx_types.dart';
-import 'package:get/state_manager.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
@@ -179,7 +176,7 @@ class BookController extends GetxController {
     var uuid = Uuid();
     var filename = uuid.v1();
     var storageRef = storage.ref().child("Images/$filename");
-    var response = await storageRef.putFile(image);
+    // var response = await storageRef.putFile(image);
     String downloadURL = await storageRef.getDownloadURL();
     imageUrl.value = downloadURL;
     print("Download URL: $downloadURL");

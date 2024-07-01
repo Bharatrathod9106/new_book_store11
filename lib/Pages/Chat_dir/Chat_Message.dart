@@ -1,8 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Components/MyTextFormField.dart';
 import 'package:bookstore/Controller/chatController.dart';
-import 'package:bookstore/Model/authmodel.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -53,7 +53,7 @@ class ChatMessageScreen extends StatelessWidget {
                   var messageText = rc.chatList[index].chatText;
                   var messageSender = rc.chatList[index]
                       .senderId; // Assuming 'senderId' is the UID
-                  var isCurrentUser = messageSender == rc.auth.currentUser!.uid;
+                  // var isCurrentUser = messageSender == rc.auth.currentUser!.uid;
 
                   return messageSender == rc.auth.currentUser!.uid
                       ? Align(

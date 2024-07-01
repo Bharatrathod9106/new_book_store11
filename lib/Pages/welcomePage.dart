@@ -1,4 +1,5 @@
-import 'package:bookstore/Components/primaryButton.dart';
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Controller/BookController.dart';
 import 'package:bookstore/Controller/NavigationController.dart';
 import 'package:bookstore/Pages/Chat_dir/ChatScreen.dart';
@@ -121,27 +122,27 @@ class welcomePage extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                   icon: Icon(Icons.home,
-                      color: Theme.of(context).colorScheme.onBackground),
+                      color: Theme.of(context).colorScheme.onSurface),
                   label: 'Home',
                   backgroundColor: Theme.of(context).colorScheme.primary),
               BottomNavigationBarItem(
                   icon: Icon(Icons.search,
-                      color: Theme.of(context).colorScheme.onBackground),
+                      color: Theme.of(context).colorScheme.onSurface),
                   label: 'Search',
                   backgroundColor: Theme.of(context).colorScheme.primary),
               BottomNavigationBarItem(
                   icon: Icon(Icons.post_add,
-                      color: Theme.of(context).colorScheme.onBackground),
+                      color: Theme.of(context).colorScheme.onSurface),
                   label: 'Post',
                   backgroundColor: Theme.of(context).colorScheme.primary),
               BottomNavigationBarItem(
                   icon: Icon(Icons.chat,
-                      color: Theme.of(context).colorScheme.onBackground),
+                      color: Theme.of(context).colorScheme.onSurface),
                   label: 'chat',
                   backgroundColor: Theme.of(context).colorScheme.primary),
               BottomNavigationBarItem(
                   icon: Icon(Icons.person,
-                      color: Theme.of(context).colorScheme.onBackground),
+                      color: Theme.of(context).colorScheme.onSurface),
                   label: 'Profile',
                   backgroundColor: Theme.of(context).colorScheme.primary),
             ],

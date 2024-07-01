@@ -1,8 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:bookstore/Controller/BookController.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 import '../Components/round_button.dart';
 import '../Controller/loginController.dart';
 import 'LoginWithPhone.dart';
@@ -56,7 +56,7 @@ class LoginScreen extends StatelessWidget {
                                       ?.copyWith(
                                         color: Theme.of(context)
                                             .colorScheme
-                                            .onBackground,
+                                            .onSurface,
                                       )),
                               const SizedBox(height: 10),
                               Flexible(
@@ -69,7 +69,7 @@ class LoginScreen extends StatelessWidget {
                                         ?.copyWith(
                                           color: Theme.of(context)
                                               .colorScheme
-                                              .onBackground,
+                                              .onSurface,
                                         )),
                               ),
                             ],
@@ -163,7 +163,7 @@ class LoginScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
                       border: Border.all(
-                          color: Theme.of(context).colorScheme.onBackground),
+                          color: Theme.of(context).colorScheme.onSurface),
                     ),
                     child: const Center(
                       child: Text("Login with phone"),

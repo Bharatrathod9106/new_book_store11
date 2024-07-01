@@ -2,7 +2,6 @@ import 'package:bookstore/Pages/BookPage/BookPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 class BookActionBtn extends StatelessWidget {
   final String bookUrl;
   const BookActionBtn({Key? key, required this.bookUrl}) : super(key: key);
@@ -32,7 +31,7 @@ class BookActionBtn extends StatelessWidget {
                     .bodyLarge
                     ?.copyWith(
                   color:
-                  Theme.of(context).colorScheme.onBackground,
+                  Theme.of(context).colorScheme.onSurface,
                   letterSpacing: 1.2,
                 ),
               ),
@@ -41,7 +40,7 @@ class BookActionBtn extends StatelessWidget {
           Container(
             width: 2,
             height: 30,
-            decoration: BoxDecoration(color: Theme.of(context).colorScheme.background,
+            decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface,
                 borderRadius: BorderRadius.circular(10)
             ),
           ),
@@ -55,7 +54,7 @@ class BookActionBtn extends StatelessWidget {
                   .bodyLarge
                   ?.copyWith(
                 color:
-                Theme.of(context).colorScheme.onBackground,
+                Theme.of(context).colorScheme.onSurface,
                 letterSpacing: 1.2,
               ),
             ),
